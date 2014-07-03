@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		429926DE1962294700EEC798 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 429926DD1962294700EEC798 /* Foundation.framework */; };
+		429926E01962294700EEC798 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 429926DF1962294700EEC798 /* CoreGraphics.framework */; };
+		429926E21962294700EEC798 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 429926E11962294700EEC798 /* UIKit.framework */; };
+		429926E81962294700EEC798 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 429926E61962294700EEC798 /* InfoPlist.strings */; };
+		429926EA1962294700EEC798 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 429926E91962294700EEC798 /* main.m */; };
+		429926EE1962294700EEC798 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 429926ED1962294700EEC798 /* AppDelegate.m */; };
+		429926F01962294700EEC798 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 429926EF1962294700EEC798 /* Images.xcassets */; };
+		429926F71962294700EEC798 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 429926F61962294700EEC798 /* XCTest.framework */; };
+		429926F81962294700EEC798 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 429926DD1962294700EEC798 /* Foundation.framework */; };
+		429926F91962294700EEC798 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 429926E11962294700EEC798 /* UIKit.framework */; };
+		4299270F19622A1100EEC798 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4299270E19622A1100EEC798 /* libc++.dylib */; };
+		4299271119622A2900EEC798 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4299271019622A2900EEC798 /* libicucore.dylib */; };
+		4299271419622B7A00EEC798 /* KZConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4299271319622B7A00EEC798 /* KZConnectionManager.m */; };
+		42BCB85319642E7F00D8EC4B /* kz.client.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42BCB85219642E7F00D8EC4B /* kz.client.a */; };
+		42EC56F519627EA700D4B327 /* KZBlankSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EC56F419627EA700D4B327 /* KZBlankSampleViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		429926FA1962294700EEC798 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 429926D21962294700EEC798 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 429926D91962294700EEC798;
+			remoteInfo = KidoZenBlankProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		429926DA1962294700EEC798 /* HelloKido.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloKido.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		429926DD1962294700EEC798 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		429926DF1962294700EEC798 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		429926E11962294700EEC798 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		429926E51962294700EEC798 /* KidoZenBlankProject-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KidoZenBlankProject-Info.plist"; sourceTree = "<group>"; };
+		429926E71962294700EEC798 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		429926E91962294700EEC798 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		429926EB1962294700EEC798 /* KidoZenBlankProject-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KidoZenBlankProject-Prefix.pch"; sourceTree = "<group>"; };
+		429926EC1962294700EEC798 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		429926ED1962294700EEC798 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		429926EF1962294700EEC798 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		429926F51962294700EEC798 /* KidoZenBlankProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KidoZenBlankProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		429926F61962294700EEC798 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4299270E19622A1100EEC798 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		4299271019622A2900EEC798 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		4299271219622B7A00EEC798 /* KZConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZConnectionManager.h; sourceTree = "<group>"; };
+		4299271319622B7A00EEC798 /* KZConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZConnectionManager.m; sourceTree = "<group>"; };
+		42BCB85219642E7F00D8EC4B /* kz.client.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = kz.client.a; path = libs/kz.client.a; sourceTree = "<group>"; };
+		42EC56F319627EA700D4B327 /* KZBlankSampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZBlankSampleViewController.h; sourceTree = "<group>"; };
+		42EC56F419627EA700D4B327 /* KZBlankSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZBlankSampleViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		429926D71962294700EEC798 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42BCB85319642E7F00D8EC4B /* kz.client.a in Frameworks */,
+				4299271119622A2900EEC798 /* libicucore.dylib in Frameworks */,
+				4299270F19622A1100EEC798 /* libc++.dylib in Frameworks */,
+				429926E01962294700EEC798 /* CoreGraphics.framework in Frameworks */,
+				429926E21962294700EEC798 /* UIKit.framework in Frameworks */,
+				429926DE1962294700EEC798 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		429926F21962294700EEC798 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				429926F71962294700EEC798 /* XCTest.framework in Frameworks */,
+				429926F91962294700EEC798 /* UIKit.framework in Frameworks */,
+				429926F81962294700EEC798 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		429926D11962294700EEC798 = {
+			isa = PBXGroup;
+			children = (
+				429926E31962294700EEC798 /* KidoZenBlankProject */,
+				429926DC1962294700EEC798 /* Frameworks */,
+				429926DB1962294700EEC798 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		429926DB1962294700EEC798 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				429926DA1962294700EEC798 /* HelloKido.app */,
+				429926F51962294700EEC798 /* KidoZenBlankProjectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		429926DC1962294700EEC798 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42BCB85219642E7F00D8EC4B /* kz.client.a */,
+				4299271019622A2900EEC798 /* libicucore.dylib */,
+				4299270E19622A1100EEC798 /* libc++.dylib */,
+				429926DD1962294700EEC798 /* Foundation.framework */,
+				429926DF1962294700EEC798 /* CoreGraphics.framework */,
+				429926E11962294700EEC798 /* UIKit.framework */,
+				429926F61962294700EEC798 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		429926E31962294700EEC798 /* KidoZenBlankProject */ = {
+			isa = PBXGroup;
+			children = (
+				429926EC1962294700EEC798 /* AppDelegate.h */,
+				429926ED1962294700EEC798 /* AppDelegate.m */,
+				4299271219622B7A00EEC798 /* KZConnectionManager.h */,
+				4299271319622B7A00EEC798 /* KZConnectionManager.m */,
+				42EC56F319627EA700D4B327 /* KZBlankSampleViewController.h */,
+				42EC56F419627EA700D4B327 /* KZBlankSampleViewController.m */,
+				429926EF1962294700EEC798 /* Images.xcassets */,
+				429926E41962294700EEC798 /* Supporting Files */,
+			);
+			path = KidoZenBlankProject;
+			sourceTree = "<group>";
+		};
+		429926E41962294700EEC798 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				429926E51962294700EEC798 /* KidoZenBlankProject-Info.plist */,
+				429926E61962294700EEC798 /* InfoPlist.strings */,
+				429926E91962294700EEC798 /* main.m */,
+				429926EB1962294700EEC798 /* KidoZenBlankProject-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		429926D91962294700EEC798 /* KidoZenBlankProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 429927061962294700EEC798 /* Build configuration list for PBXNativeTarget "KidoZenBlankProject" */;
+			buildPhases = (
+				429926D61962294700EEC798 /* Sources */,
+				429926D71962294700EEC798 /* Frameworks */,
+				429926D81962294700EEC798 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KidoZenBlankProject;
+			productName = KidoZenBlankProject;
+			productReference = 429926DA1962294700EEC798 /* HelloKido.app */;
+			productType = "com.apple.product-type.application";
+		};
+		429926F41962294700EEC798 /* KidoZenBlankProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 429927091962294700EEC798 /* Build configuration list for PBXNativeTarget "KidoZenBlankProjectTests" */;
+			buildPhases = (
+				429926F11962294700EEC798 /* Sources */,
+				429926F21962294700EEC798 /* Frameworks */,
+				429926F31962294700EEC798 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				429926FB1962294700EEC798 /* PBXTargetDependency */,
+			);
+			name = KidoZenBlankProjectTests;
+			productName = KidoZenBlankProjectTests;
+			productReference = 429926F51962294700EEC798 /* KidoZenBlankProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		429926D21962294700EEC798 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = KidoZen;
+				TargetAttributes = {
+					429926F41962294700EEC798 = {
+						TestTargetID = 429926D91962294700EEC798;
+					};
+				};
+			};
+			buildConfigurationList = 429926D51962294700EEC798 /* Build configuration list for PBXProject "KidoZenBlankProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 429926D11962294700EEC798;
+			productRefGroup = 429926DB1962294700EEC798 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				429926D91962294700EEC798 /* KidoZenBlankProject */,
+				429926F41962294700EEC798 /* KidoZenBlankProjectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		429926D81962294700EEC798 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				429926E81962294700EEC798 /* InfoPlist.strings in Resources */,
+				429926F01962294700EEC798 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		429926F31962294700EEC798 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		429926D61962294700EEC798 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				429926EE1962294700EEC798 /* AppDelegate.m in Sources */,
+				4299271419622B7A00EEC798 /* KZConnectionManager.m in Sources */,
+				42EC56F519627EA700D4B327 /* KZBlankSampleViewController.m in Sources */,
+				429926EA1962294700EEC798 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		429926F11962294700EEC798 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		429926FB1962294700EEC798 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 429926D91962294700EEC798 /* KidoZenBlankProject */;
+			targetProxy = 429926FA1962294700EEC798 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		429926E61962294700EEC798 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				429926E71962294700EEC798 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		429927041962294700EEC798 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		429927051962294700EEC798 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		429927071962294700EEC798 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KidoZenBlankProject/KidoZenBlankProject-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/libs/**",
+				);
+				INFOPLIST_FILE = "KidoZenBlankProject/KidoZenBlankProject-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs/**",
+					"$(PROJECT_DIR)/libs",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = HelloKido;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		429927081962294700EEC798 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KidoZenBlankProject/KidoZenBlankProject-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/libs/**",
+				);
+				INFOPLIST_FILE = "KidoZenBlankProject/KidoZenBlankProject-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs/**",
+					"$(PROJECT_DIR)/libs",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = HelloKido;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4299270A1962294700EEC798 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KidoZenBlankProject.app/KidoZenBlankProject";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KidoZenBlankProject/KidoZenBlankProject-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "KidoZenBlankProjectTests/KidoZenBlankProjectTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4299270B1962294700EEC798 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KidoZenBlankProject.app/KidoZenBlankProject";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KidoZenBlankProject/KidoZenBlankProject-Prefix.pch";
+				INFOPLIST_FILE = "KidoZenBlankProjectTests/KidoZenBlankProjectTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		429926D51962294700EEC798 /* Build configuration list for PBXProject "KidoZenBlankProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				429927041962294700EEC798 /* Debug */,
+				429927051962294700EEC798 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		429927061962294700EEC798 /* Build configuration list for PBXNativeTarget "KidoZenBlankProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				429927071962294700EEC798 /* Debug */,
+				429927081962294700EEC798 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		429927091962294700EEC798 /* Build configuration list for PBXNativeTarget "KidoZenBlankProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4299270A1962294700EEC798 /* Debug */,
+				4299270B1962294700EEC798 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 429926D21962294700EEC798 /* Project object */;
+}
