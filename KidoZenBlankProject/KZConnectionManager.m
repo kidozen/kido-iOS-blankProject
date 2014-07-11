@@ -23,17 +23,6 @@
 @implementation KZConnectionManager
 @synthesize delegate;
 
-//+ (id)sharedConnectionManager
-//{
-//    static KZConnectionManager *sharedConnectionManager = nil;
-//    static dispatch_once_t onceToken;
-//    dispatch_once(&onceToken, ^{
-//        sharedConnectionManager = [[self alloc] init];
-//        });
-//    
-//    return sharedConnectionManager;
-//}
-
 - (id)init
 {
     if (self = [super init]) {
