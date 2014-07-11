@@ -22,9 +22,13 @@ KZBlankSampleViewController.m
 // Replace the definition keys pointing to your tennant server instance:
 
  #define KidoZenAppCenterUrl @"https://yourAccount.kidocloud.com"
+ 
  #define KidoZenAppName @"theAppName"
+ 
  #define KidoZenProvider @"Your Provider"
+ 
  #define KidoZenUser @"yourAccount@kidozen.com"
+ 
  #define KidoZenPassword @"???????"
  
 
