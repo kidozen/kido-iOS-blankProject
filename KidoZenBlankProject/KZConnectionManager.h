@@ -16,6 +16,6 @@
 
 @interface KZConnectionManager : NSObject
 @property (nonatomic, strong) id<KZConnectionManagerDelegate> delegate;
-
+- (id)initWithAppCenterUrl:(NSString*)appCenterUrl andAppName:(NSString*)appNameUrl;
 @end
 

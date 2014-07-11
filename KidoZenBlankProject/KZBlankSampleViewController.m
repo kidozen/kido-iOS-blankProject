@@ -10,10 +10,13 @@
 #import "KZConnectionManager.h"
 #import "KZResponse.h"
 
-#warning Replace definitions with your account parameters:
+#warning REPLACE DEFINITIONS WITH YOUR ACCOUNT PARAMETERS.
+
+#define KidoZenPassword @"pass"
+#define KidoZenAppCenterUrl @"https://kidodemo.kidocloud.com"
+#define KidoZenAppName @"tasks"
 #define KidoZenProvider @"Kidozen"
 #define KidoZenUser @"demo@kidozen.com"
-#define KidoZenPassword @"pass"
 
 @interface KZBlankSampleViewController () <KZConnectionManagerDelegate>
 
@@ -28,35 +31,41 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _kidoZenConector = [[KZConnectionManager alloc]init];
+    _kidoZenConector = [[KZConnectionManager alloc]initWithAppCenterUrl:KidoZenAppCenterUrl andAppName:KidoZenAppName];
     _kidoZenConector.delegate = self;
     
-    _helloKidoLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 260, self.view.bounds.size.width, 30)];
+    _helloKidoLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 260, self.view.bounds.size.width, 50)];
     [_helloKidoLabel setText:@"Hello Kido"];
     [_helloKidoLabel setTextColor:[UIColor blackColor]];
     [_helloKidoLabel setTextAlignment:NSTextAlignmentCenter];
+    [_helloKidoLabel setNumberOfLines:2];
     [self.view addSubview:_helloKidoLabel];
 }
 
 - (void)conectionSuccessfulWithResponse:(KZResponse *)response{
     
     self.kzResponse = response;
+    
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [button addTarget:self
-               action:@selector(authenticateUser)
-     forControlEvents:UIControlEventTouchUpInside];
+    [button addTarget:self action:@selector(authenticateUser)forControlEvents:UIControlEventTouchUpInside];
     [button setTitle:@"Authenticate" forState:UIControlStateNormal];
-    button.frame = CGRectMake(0.0, 120.0, self.view.bounds.size.width, 40.0);
+    [button setFrame:CGRectMake(0.0, 120.0, self.view.bounds.size.width, 40.0)];
     [self.view addSubview:button];
 }
 
 - (void)authenticateUser{
     
+    UIActivityIndicatorView * waitingGear = [[UIActivityIndicatorView alloc]initWithFrame:self.view.bounds];
+    [waitingGear startAnimating];
+    [waitingGear setBackgroundColor:[UIColor colorWithWhite:0 alpha:.7]];
+    [self.view addSubview:waitingGear];
 
      [_kzResponse.application authenticateUser:KidoZenUser withProvider:KidoZenProvider andPassword:KidoZenPassword completion:^(id c) {
         if (c) {
-            [_helloKidoLabel setText:[NSString stringWithFormat:@"Hello:%@",KidoZenUser]];
-
+            
+            [_helloKidoLabel setText:[NSString stringWithFormat:@"Hello: %@ \n You are logged in!",KidoZenUser]];
+            [waitingGear stopAnimating];
+            [waitingGear removeFromSuperview];
         }
     }];
 }
@@ -64,7 +73,6 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 -(UIStatusBarStyle)preferredStatusBarStyle{

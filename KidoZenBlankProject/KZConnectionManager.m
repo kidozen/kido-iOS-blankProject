@@ -10,23 +10,23 @@
 #import "KZResponse.h"
 #import "KZApplication.h"
 
-#define KidoZenAppCenterUrl @"https://kidodemo.kidocloud.com"
-#define KidoZenAppName @"tasks"
-
 @interface KZConnectionManager ()
-
 @property (nonatomic,strong) KZApplication *kzApp;
-
+@property (nonatomic,strong) NSString *kzAppCenterURL;
+@property (nonatomic,strong) NSString *kzAppName;
 @end
 
 
 @implementation KZConnectionManager
 @synthesize delegate;
 
-- (id)init
+- (id)initWithAppCenterUrl:(NSString*)appCenterUrl andAppName:(NSString*)appNameUrl
 {
     if (self = [super init]) {
+        self.kzAppCenterURL = appCenterUrl;
+        self.kzAppName = appNameUrl;
         [self connectToKidoZenServices];
+
     }
     
     return self;
@@ -34,13 +34,12 @@
 
 - (void)connectToKidoZenServices
 {
-    self.kzApp = [[KZApplication alloc] initWithTennantMarketPlace:KidoZenAppCenterUrl
-                                                   applicationName:KidoZenAppName
+    self.kzApp = [[KZApplication alloc] initWithTennantMarketPlace:_kzAppCenterURL
+                                                   applicationName:_kzAppName
                                                     applicationKey:nil
                                                          strictSSL:NO
                                                        andCallback:^(KZResponse * response) {
                                                            if (response.response!=nil) {
-//                                                               self.kzResponse = response;
                                                                [self conectionSuccessfulWithResponse:response];
                                                            }else {
                                                                NSLog(@"**** ERROR MESSAGE: Unable to reach the kidozen server. Make sure your KidoZenAppCenterUrl and KidoZenAppName are correct");
