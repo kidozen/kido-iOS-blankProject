@@ -26,4 +26,5 @@ KZBlankSampleViewController.m
  #define KidoZenProvider @"Your Provider"
  #define KidoZenUser @"yourAccount@kidozen.com"
  #define KidoZenPassword @"???????"
+ 
 
