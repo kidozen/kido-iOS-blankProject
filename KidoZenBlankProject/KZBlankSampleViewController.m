@@ -12,12 +12,11 @@
 
 #warning REPLACE DEFINITIONS WITH YOUR ACCOUNT PARAMETERS.
 
-#define KidoZenPassword @"pass"
-#define KidoZenAppCenterUrl @"https://kidodemo.kidocloud.com"
-#define KidoZenAppName @"tasks"
+#define KidoZenAppCenterUrl @"https:????.kidocloud.com"
+#define KidoZenAppName @"???"
 #define KidoZenProvider @"Kidozen"
-#define KidoZenUser @"demo@kidozen.com"
-
+#define KidoZenUser @"user@email.com"
+#define KidoZenPassword @"????"
 @interface KZBlankSampleViewController () <KZConnectionManagerDelegate>
 
 @property (nonatomic,strong) KZConnectionManager *kidoZenConector;
